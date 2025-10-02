@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faiz_Febrian</title>
+
+    <!-- CSS External link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+        <main class="container">
+
+        <header>
+            <h1>To-Do List</h1>
+        </header>
+        
+        <section class="input-section">
+            <form id="todo-form">
+                <input type="text" id="task-input" placeholder="Tugas baru..." required>
+                <input type="date" id="task-date" required>
+                <button type="submit">Tambah</button>
+                <p class="error-message" id="error-message"></p>
+            </form>
+        </section>
+        
+        <section class="filter-section">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="active">Aktif</button>
+            <button class="filter-btn" data-filter="completed">Selesai</button>
+        </section>
+        
+        <section class="task-list" id="task-list">
+            <p class="empty-state" id="empty-state">Tidak ada tugas</p>
+        </section>
+        
+        <footer class="stats">
+            <span id="task-count">0 tugas tersisa</span>
+        </footer>
+
+    </main>
+
+    <!-- JavaScript -->
+     <script src="js/script.js"></script>
+
+</body>
+</html>
