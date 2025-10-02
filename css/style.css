@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+header {
+    background: #4a6ee0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.input-section {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4a6ee0;
+}
+
+button {
+    padding: 12px;
+    background: #4a6ee0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+button:hover {
+    background: #3a5ed0;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    min-height: 18px;
+}
+
+.filter-section {
+    padding: 15px 20px;
+    display: flex;
+    gap: 10px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
+
+.filter-btn {
+    background: white;
+    color: #666;
+    border: 1px solid #ddd;
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.filter-btn.active {
+    background: #4a6ee0;
+    color: white;
+    border-color: #4a6ee0;
+}
+
+.task-list {
+    min-height: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    gap: 12px;
+}
+
+.task-item:hover {
+    background: #f8f9fa;
+}
+
+.task-item.completed {
+    opacity: 0.7;
+}
+
+.task-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.task-content {
+    flex: 1;
+}
+
+.task-text {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.task-date {
+    font-size: 12px;
+    color: #888;
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty-state {
+    padding: 40px 20px;
+    text-align: center;
+    color: #888;
+}
+
+.stats {
+    padding: 15px 20px;
+    text-align: center;
+    background: #f8f9fa;
+    color: #666;
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        border-radius: 8px;
+    }
+}
